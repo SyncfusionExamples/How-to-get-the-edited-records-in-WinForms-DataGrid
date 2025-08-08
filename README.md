@@ -4,10 +4,10 @@ In [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid)
 
  ```C#
 //Event subscription
-sfDataGrid1.CurrentCellValidated += SfDataGrid1_CurrentCellValidated;
+sfDataGrid1.CurrentCellValidated += OnCurrentCellValidated;
 
 //Event customization
-private void SfDataGrid1_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs e)
+private void OnCurrentCellValidated(object sender, CurrentCellValidatedEventArgs e)
 {
      if(e.NewValue != null)
      {
