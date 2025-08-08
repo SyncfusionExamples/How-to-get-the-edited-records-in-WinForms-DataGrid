@@ -1,6 +1,6 @@
 # How to get the edited records in WinForms DataGrid?
 
-In [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid), you can retrieve the edited records in the [CurrentCellValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidated) event. This event is triggered once the cell validation is complete with valid data, and you can access both the edited cell value and the corresponding row values in this event.
+In [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid), edited records can be retrieved in the [CurrentCellValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidated) event.This event is triggered once cell validation is completed with valid data, allowing access to both the edited cell value and the corresponding row values.
 
  ```C#
 //Event subscription

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Syncfusion.WinForms.DataGrid;
+using Syncfusion.WinForms.DataGrid.Events;
 
 namespace WinformsDataGrid
 {
@@ -37,7 +38,7 @@ namespace WinformsDataGrid
         }
 
         //Event customization
-        private void SfDataGrid1_CurrentCellValidated(object sender, Syncfusion.WinForms.DataGrid.Events.CurrentCellValidatedEventArgs e)
+        private void SfDataGrid1_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs e)
         {
             if (e.NewValue != null)
             {
