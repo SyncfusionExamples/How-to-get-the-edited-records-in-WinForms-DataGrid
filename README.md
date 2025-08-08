@@ -9,14 +9,15 @@ sfDataGrid1.CurrentCellValidated += OnCurrentCellValidated;
 //Event customization
 private void OnCurrentCellValidated(object sender, CurrentCellValidatedEventArgs e)
 {
-     if(e.NewValue != null)
-     {
-         editedRecords.Add(e.NewValue);
-     }
-     if(e.RowData != null)
-     {
-         editedRows.Add(e.RowData as OrderInfo);
-     }
+    if(e.NewValue != null)
+    {
+        editedRecords.Add(e.NewValue);
+    }
+
+    if(e.RowData != null)
+    {
+        editedRows.Add(e.RowData as OrderInfo);
+    }
 } 
  ```
 
