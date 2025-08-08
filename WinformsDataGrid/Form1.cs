@@ -33,8 +33,7 @@ namespace WinformsDataGrid
             editedRecords = new ObservableCollection<object>();
             sfDataGrid1.DataSource = orderInfoCollection.Orders;
             //Event subscription
-            sfDataGrid1.CurrentCellValidated += SfDataGrid1_CurrentCellValidated;
-          
+            sfDataGrid1.CurrentCellValidated += SfDataGrid1_CurrentCellValidated; 
         }
 
         //Event customization
