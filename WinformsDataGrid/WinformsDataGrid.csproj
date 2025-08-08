@@ -37,7 +37,6 @@
     <Reference Include="Syncfusion.Data.WinForms"/>
     <Reference Include="Syncfusion.DataSource.WinForms"/>
     <Reference Include="Syncfusion.GridCommon.WinForms"/>
-    <Reference Include="Syncfusion.Licensing"/>
     <Reference Include="Syncfusion.SfDataGrid.WinForms"/>
     <Reference Include="Syncfusion.SfInput.WinForms"/>
     <Reference Include="Syncfusion.SfListView.WinForms"/>
@@ -77,7 +76,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

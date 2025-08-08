@@ -31,11 +31,12 @@ namespace WinformsDataGrid
             editedRows = new ObservableCollection<OrderInfo>();
             editedRecords = new ObservableCollection<object>();
             sfDataGrid1.DataSource = orderInfoCollection.Orders;
-
+            //Event subscription
             sfDataGrid1.CurrentCellValidated += SfDataGrid1_CurrentCellValidated;
           
         }
 
+        //Event customization
         private void SfDataGrid1_CurrentCellValidated(object sender, Syncfusion.WinForms.DataGrid.Events.CurrentCellValidatedEventArgs e)
         {
             if (e.NewValue != null)

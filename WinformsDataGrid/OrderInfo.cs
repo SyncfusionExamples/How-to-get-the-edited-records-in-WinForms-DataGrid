@@ -17,13 +17,6 @@ namespace WinformsDataGrid
         private string customerName;
         private string shippingCity;
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
         public string OrderID
         {
             get => orderID;
@@ -89,6 +82,11 @@ namespace WinformsDataGrid
             }
         }
 
+        public OrderInfo()
+        {
+
+        }
+
         public OrderInfo(string orderId, string customerName, string country, string customerId, string shipCity)
         {
             this.OrderID = orderId;
@@ -96,6 +94,13 @@ namespace WinformsDataGrid
             this.Country = country;
             this.CustomerID = customerId;
             this.ShipCity = shipCity;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 
